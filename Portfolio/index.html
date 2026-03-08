@@ -329,131 +329,49 @@
 <!-- ══ CONTACT ══ -->
 <section id="contact">
   <div class="contact-bg-text">Let's Work</div>
-
   <div class="container">
     <div class="contact-layout">
-
-      <!-- LEFT SIDE -->
       <div class="contact-left">
         <div class="eyebrow sr">Get in Touch</div>
-        <h2 class="section-title sr d1">
-          Let's Create<br>
-          <em>Content That<br>Converts</em>
-        </h2>
-
-        <p class="sr d2">
-          Ready to elevate your brand? Whether you need scroll-stopping reels,
-          brand films, or 3D product ads — let's talk.
-        </p>
-
+        <h2 class="section-title sr d1">Let's Create<br><em>Content That<br>Converts</em></h2>
+        <p class="sr d2">Ready to elevate your brand? Whether you need scroll-stopping reels, brand films, or 3D product ads — let's talk.</p>
         <div class="ci-list sr d3">
-
-          <div class="ci">
-            <div class="ci-icon">✉️</div>
-            <div>
-              <div class="ci-lbl">Email</div>
-              <div class="ci-val">
-                <a href="mailto:narottamsharan.work@gmail.com">
-                  narottamsharan.work@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="ci">
-            <div class="ci-icon">📞</div>
-            <div>
-              <div class="ci-lbl">Phone / WhatsApp</div>
-              <div class="ci-val">
-                <a href="tel:+916205839643">
-                  +91 6205839643
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="ci">
-            <div class="ci-icon">💼</div>
-            <div>
-              <div class="ci-lbl">LinkedIn</div>
-              <div class="ci-val">
-                <a href="https://www.linkedin.com/in/narottam-sharan-18b203218/" target="_blank">
-                  narottam-sharan-18b203218 ↗
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="ci">
-            <div class="ci-icon">📍</div>
-            <div>
-              <div class="ci-lbl">Location</div>
-              <div class="ci-val">
-                Bhilai, Chhattisgarh · Open to Remote
-              </div>
-            </div>
-          </div>
-
+          <div class="ci"><div class="ci-icon">✉️</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=narottamsharan.work@gmail.com" target="_blank">narottamsharan.work@gmail.com</a></div></div></div>
+          <div class="ci"><div class="ci-icon">📞</div><div><div class="ci-lbl">Phone / WhatsApp</div><div class="ci-val"><a href="tel:+916205839643">+91 6205839643</a></div></div></div>
+          <div class="ci"><div class="ci-icon">💼</div><div><div class="ci-lbl">LinkedIn</div><div class="ci-val"><a href="https://www.linkedin.com/in/narottam-sharan-18b203218/" target="_blank">narottam-sharan-18b203218 ↗</a></div></div></div>
+          <div class="ci"><div class="ci-icon">📍</div><div><div class="ci-lbl">Location</div><div class="ci-val">Bhilai, Chhattisgarh · Open to Remote</div></div></div>
         </div>
       </div>
-
-
-      <!-- NETLIFY FORM -->
-      <form
-        class="c-form glass-panel sr-r d2"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-
+      <form class="c-form glass-panel sr-r d2" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact">
-
         <p hidden>
-          <label>
-            Don’t fill this out:
+          <label>Don't fill this out:
             <input name="bot-field">
           </label>
         </p>
-
         <div class="c-form-top">
           <div class="c-form-kicker">Start a Project</div>
-          <div class="c-form-title">
-            Tell me about your next video.
-          </div>
+          <div class="c-form-title">Tell me about your next video.</div>
         </div>
-
         <div class="fg-row">
-
-          <div class="fg">
-            <input type="text" name="name" placeholder="Full Name" required>
-          </div>
-
-          <div class="fg">
-            <input type="email" name="email" placeholder="Email Address" required>
-          </div>
-
+          <div class="fg"><input type="text" id="fn" name="name" placeholder="Full Name" required><label for="fn">Full Name</label></div>
+          <div class="fg"><input type="email" id="fe" name="email" placeholder="Email Address" required><label for="fe">Email Address</label></div>
         </div>
-
-        <div class="fg">
-          <input type="text" name="company" placeholder="Company / Brand">
-        </div>
-
-        <div class="fg">
-          <input type="text" name="service" placeholder="Service Required">
-        </div>
-
-        <div class="fg">
-          <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-        </div>
-
-        <button class="c-submit mag-btn" type="submit">
+        <div class="fg"><input type="text" id="fc" name="company" placeholder="Company / Brand"><label for="fc">Company / Brand</label></div>
+        <div class="fg"><input type="text" id="fs" name="service" placeholder="Service Required"><label for="fs">Service Required</label></div>
+        <div class="fg"><textarea id="fm" name="message" rows="5" placeholder="Your Message"></textarea><label for="fm">Your Message</label></div>
+        <button class="c-submit mag-btn" id="submitBtn" type="submit">
           <span class="c-submit-text">Send Message</span>
-          <span class="c-submit-arrow">→</span>
+          <span class="c-submit-arrow">&rarr;</span>
         </button>
-
+        <div class="form-success" id="formSuccess" aria-live="polite">
+          <div class="form-success-icon">&check;</div>
+          <div>
+            <div class="form-success-title">Message Sent Successfully</div>
+            <div class="form-success-text">Thank you for reaching out. I'll reply within 24 hours.</div>
+          </div>
+        </div>
       </form>
-
     </div>
   </div>
 </section>
@@ -474,3 +392,4 @@
 <script src="main.js"></script>
 </body>
 </html>
+
