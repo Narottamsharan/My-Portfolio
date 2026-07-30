@@ -104,21 +104,21 @@
     "thumbnail_url": "https://i.ytimg.com/vi/GZQA6iZxlcg/hqdefault.jpg",
     "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/GZQA6iZxlcg?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Ganpati Bappa\"></iframe>"
   },
-"fDHm0pd2b3M": {
-  "title": "Luxury Eyewear Commercial",
-  "author_name": "Narottam Sharan",
-  "author_url": "https://www.youtube.com/@narottamsharan8445",
-  "type": "video",
-  "height": 720,
-  "width": 405,
-  "version": "1.0",
-  "provider_name": "YouTube",
-  "provider_url": "https://www.youtube.com/",
-  "thumbnail_height": 1080,
-  "thumbnail_width": 1920,
-  "thumbnail_url": "https://i.ytimg.com/vi/fDHm0pd2b3M/maxresdefault.jpg",
-  "html": "<iframe width=\"405\" height=\"720\" src=\"https://www.youtube.com/embed/fDHm0pd2b3M\" title=\"Luxury Eyewear Commercial\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
-},
+  "fDHm0pd2b3M": {
+    "title": "Nayan Sukh Exclusive.",
+    "author_name": "Narottam Sharan",
+    "author_url": "https://www.youtube.com/@narottamsharan8445",
+    "type": "video",
+    "height": 113,
+    "width": 200,
+    "version": "1.0",
+    "provider_name": "YouTube",
+    "provider_url": "https://www.youtube.com/",
+    "thumbnail_height": 360,
+    "thumbnail_width": 480,
+    "thumbnail_url": "https://i.ytimg.com/vi/fDHm0pd2b3M/maxresdefault.jpg",
+    "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/fDHm0pd2b3M?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Nayan Sukh Exclusive.\"></iframe>"
+  },
   "E6sB17ZdDV0": {
     "title": "home tour international client",
     "author_name": "Narottam Sharan",

@@ -28,7 +28,7 @@ export const EXPERIENCES: Experience[] = [
     id: "exp-3",
     role: "Video Editor",
     company: "Google Developers Group",
-    duration: "Sep 2024 - Oct 2025",
+    duration: "Sep 2026 - Oct 2025",
     description: "Core video editor for community events and marketing.",
     achievements: [
       "Edited 15+ event and promotional videos.",

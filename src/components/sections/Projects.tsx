@@ -86,13 +86,15 @@ const ProjectModal = ({ project, onClose, onNext, onPrev }: { project: Project; 
               isShort ? "aspect-[9/16] max-w-[400px]" : "aspect-video"
             )}>
               <iframe
+                key={project.id}
                 width="100%"
                 height="100%"
                 src={`${project.embedUrl}?autoplay=1&rel=0`}
                 title={project.title}
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
                 className="w-full h-full object-cover"
                 loading="lazy"
               ></iframe>
@@ -244,6 +246,13 @@ const ProjectCard = ({ project, onClick }: { project: Project, onClick: () => vo
           alt={project.title} 
           className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           loading="lazy"
+          onError={(event) => {
+            const fallbackThumbnail = project.thumbnail.replace('/maxresdefault.jpg', '/sddefault.jpg');
+
+            if (event.currentTarget.src !== fallbackThumbnail) {
+              event.currentTarget.src = fallbackThumbnail;
+            }
+          }}
         />
         
         {/* Overlay */}
