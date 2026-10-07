@@ -284,27 +284,34 @@ export default function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState('All');
 
+  const sortedProjects = useMemo(() => [...PROJECTS].sort((firstProject, secondProject) => {
+    const firstUploadTime = firstProject.uploadTimestamp ?? new Date(firstProject.uploadDate).getTime();
+    const secondUploadTime = secondProject.uploadTimestamp ?? new Date(secondProject.uploadDate).getTime();
+
+    return secondUploadTime - firstUploadTime;
+  }), []);
+
   // Defined categories to show
   const allowedCategories = ['All', 'Short Form', 'Long Form', 'Commercial', 'Brand Content', 'Educational'];
   
   const categories = useMemo(() => {
     // Only show categories that have at least one project
     const available = new Set<string>();
-    PROJECTS.forEach(p => {
+    sortedProjects.forEach(p => {
       available.add(p.category);
       available.add(p.videoType);
     });
     
     return allowedCategories.filter(cat => cat === 'All' || available.has(cat));
-  }, []);
+  }, [sortedProjects]);
 
   const filteredProjects = useMemo(() => {
-    if (activeFilter === 'All') return PROJECTS;
-    if (activeFilter === 'Short Form') return PROJECTS.filter(p => p.videoType === 'Short Form');
-    if (activeFilter === 'Long Form') return PROJECTS.filter(p => p.videoType === 'Long Form');
+    if (activeFilter === 'All') return sortedProjects;
+    if (activeFilter === 'Short Form') return sortedProjects.filter(p => p.videoType === 'Short Form');
+    if (activeFilter === 'Long Form') return sortedProjects.filter(p => p.videoType === 'Long Form');
     // Otherwise filter by explicitly matching the category field
-    return PROJECTS.filter(p => p.category === activeFilter);
-  }, [activeFilter]);
+    return sortedProjects.filter(p => p.category === activeFilter);
+  }, [activeFilter, sortedProjects]);
 
   const handleNext = useCallback(() => {
     if (selectedProjectIndex !== null && selectedProjectIndex < filteredProjects.length - 1) {

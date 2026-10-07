@@ -10,6 +10,7 @@ export interface Project {
   client: string;
   duration: string;
   uploadDate: string;
+  uploadTimestamp?: number;
   views: string;
   likes: string;
   tags: string[];
