@@ -41,7 +41,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-32 px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
+    <section className="py-20 md:py-24 px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
       <div className="flex justify-between items-end mb-16">
         <div>
           <h2 className="text-4xl md:text-5xl font-heading font-medium tracking-tight mb-4">Client Feedback</h2>

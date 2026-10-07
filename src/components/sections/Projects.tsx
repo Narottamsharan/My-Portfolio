@@ -235,8 +235,8 @@ const ProjectCard = ({ project, onClick }: { project: Project, onClick: () => vo
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
       className={cn(
-        "group cursor-pointer flex flex-col gap-6 w-full mb-12",
-        isShort && "lg:max-w-[420px] lg:mx-auto"
+        "group cursor-pointer flex flex-col gap-5 w-full mb-8",
+        isShort && "lg:max-w-[340px] lg:mx-auto"
       )}
       onClick={onClick}
     >
@@ -329,8 +329,8 @@ export default function Projects() {
   }, [selectedProjectIndex]);
 
   return (
-    <section id="work" className="py-32 px-6 lg:px-12 max-w-[1600px] mx-auto">
-      <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 mb-24">
+    <section id="work" className="py-20 md:py-24 px-6 lg:px-12 max-w-[1600px] mx-auto">
+      <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14 md:mb-16">
         <div className="max-w-3xl">
           <h2 className="text-4xl md:text-6xl font-heading font-medium tracking-tight mb-8">Selected Work</h2>
           <p className="text-xl md:text-2xl text-text-secondary font-light leading-relaxed">
@@ -359,7 +359,7 @@ export default function Projects() {
 
       <motion.div layout className="w-full">
         {/* Editorial Masonry Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-8 md:gap-12 w-full">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8 w-full">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, idx) => (
               <div key={project.id} className="break-inside-avoid">

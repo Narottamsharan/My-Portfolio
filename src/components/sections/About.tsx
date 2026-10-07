@@ -4,8 +4,8 @@ import { Award, Briefcase } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-32 px-6 lg:px-12 max-w-[1400px] mx-auto border-t border-border-subtle">
-      <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start mb-32">
+    <section id="about" className="py-20 md:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto border-t border-border-subtle">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start mb-20">
         
         {/* Left: Portrait */}
         <motion.div

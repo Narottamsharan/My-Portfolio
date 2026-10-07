@@ -56,7 +56,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 px-6 lg:px-12 max-w-7xl mx-auto relative">
+    <section id="contact" className="py-20 md:py-24 px-6 lg:px-12 max-w-7xl mx-auto relative">
       <div className="bg-surface-1 rounded-[2.5rem] border border-border-subtle p-8 md:p-16 lg:p-24 relative overflow-hidden">
         {/* Abstract Glow */}
         <div className="absolute top-0 right-0 w-full h-full bg-accent/5 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>

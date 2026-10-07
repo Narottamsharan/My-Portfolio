@@ -13,7 +13,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function BentoGrid() {
   return (
-    <section id="expertise" className="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
+    <section id="expertise" className="py-20 md:py-24 px-6 lg:px-12 max-w-7xl mx-auto">
       <div className="mb-20">
         <h2 className="text-4xl md:text-5xl font-heading font-medium tracking-tight mb-6">Expertise & Workflow</h2>
         <p className="text-xl text-text-secondary max-w-2xl font-light">

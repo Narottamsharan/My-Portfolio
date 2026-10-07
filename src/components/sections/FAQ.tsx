@@ -8,7 +8,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-32 px-6 lg:px-12 max-w-4xl mx-auto border-t border-border-subtle">
+    <section className="py-20 md:py-24 px-6 lg:px-12 max-w-4xl mx-auto border-t border-border-subtle">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-heading font-medium tracking-tight mb-4">Common Questions</h2>
         <p className="text-text-secondary">Everything you need to know about the process.</p>
