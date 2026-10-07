@@ -234,7 +234,10 @@ const ProjectCard = ({ project, onClick }: { project: Project, onClick: () => vo
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-      className="group cursor-pointer flex flex-col gap-6 w-full mb-12"
+      className={cn(
+        "group cursor-pointer flex flex-col gap-6 w-full mb-12",
+        isShort && "lg:max-w-[420px] lg:mx-auto"
+      )}
       onClick={onClick}
     >
       <div className={cn(
